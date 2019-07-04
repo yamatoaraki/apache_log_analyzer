@@ -16,8 +16,11 @@ Apacheのログを解析するツールです。
 - python 3.7以上
 
 - apache_log_parserのインストール
-　pip install apache_log_parser
+```
 
+　$ pip install apache_log_parser
+
+```
 ## 使い方
 
 1. 基本的な使い方
