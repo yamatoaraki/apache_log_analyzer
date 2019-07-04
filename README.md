@@ -22,14 +22,21 @@ Apacheのログを解析するツールです。
 
 1. 基本的な使い方
    -input_fileオプションを指定しログファイルを引数として与える。引数のファイルの数はいくらでも良い。
+```
+
   （例）python apache_log_analyzer.py -input_file access_log1
   （例）python apache_log_analyzer.py -input_file access_log1 access_log2
 
+```
+
 2. 期間を指定する。-termオプションを指定し引数としてisoフォーマット形式で２つの引数を与える。この際に始まりの日時と終わりの日時の順番は問わない。
+```
+
   （例）python apache_log_analyzer.py -input_file access_log1 -term 2018-06-18T23:59:59 2018-06-18T00:00:00
   （例）python apache_log_analyzer.py -input_file access_log1 -term 2018-06-18T00:00:00 2018-06-18T23:59:59
   （例）python apache_log_analyzer.py -input_file access_log1 access_log2 -term 2018-06-18T23:59:59 2018-06-18T00:00:00
 
+```
 ## 試してみる
 
 ```
